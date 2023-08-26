@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using SsTaimsal2023.EL;
 
-namespace SsTaimsal2023.EL;
+namespace SsTaimsal2023.DAL;
 
 public partial class SystemTaimsalDevsContext : DbContext
 {

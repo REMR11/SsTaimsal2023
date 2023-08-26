@@ -39,4 +39,6 @@ public partial class Report
     [ForeignKey("IdUser")]
     [InverseProperty("Reports")]
     public virtual UserDev IdUserNavigation { get; set; } = null!;
+    [NotMapped]
+    public int Top_Aux { get; set; }
 }

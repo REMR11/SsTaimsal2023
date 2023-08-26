@@ -12,14 +12,15 @@ public partial class Machine
     [Key]
     public int IdMachine { get; set; }
 
-    [StringLength(30)]
+    [StringLength(30, ErrorMessage = "Máximo de 30 caracteres")]
     [Unicode(false)]
     public string? NameMachine { get; set; }
 
-    [StringLength(1)]
     [Unicode(false)]
     public string? UrlImg { get; set; }
 
     [InverseProperty("IdMachineNavigation")]
     public virtual ICollection<Report> Reports { get; } = new List<Report>();
+    [NotMapped]
+    public int Top_Aux { get; set; }
 }
