@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --configuration Release --project Path/To/SsTaimsal2023/SsTaimsal2023/SsTaimsal2023.EL.csproj
+      run: dotnet build --configuration Release --project SsTaimsal2023.EL.csproj
     - name: Test
-      run: dotnet test --no-build --verbosity normal --configuration Release --no-build --project Path/To/SsTaimsal2023/SsTaimsal2023/SsTaimsal2023.EL.csproj
+      run: dotnet test --no-build --verbosity normal --configuration Release --no-build --project SsTaimsal2023.EL.csproj
