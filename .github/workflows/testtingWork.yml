@@ -1,0 +1,15 @@
+name: Say hello
+
+on:
+  push:
+    branches:
+    - Devs
+    - Release
+
+jobs:
+  Hola:
+    runs-on:  ubuntu-18.04
+    steps:
+      - name : eco_Runners 
+        run: |
+          .\SsTaimsal2023\SsTaimsal2023
