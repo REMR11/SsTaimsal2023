@@ -10,6 +10,7 @@ jobs:
   Hola:
     runs-on:  ubuntu-18.04
     steps:
-      - name : eco_Runners 
+      - name : Echo the message 
         run: |
-          .\SsTaimsal2023\SsTaimsal2023
+            echo "Hola midu!"
+        # .\SsTaimsal2023\SsTaimsal2023
